@@ -1,5 +1,3 @@
-package homeworkrdec;
-
 public class bargraph {
 
     public static void main(String[] args) {
@@ -20,7 +18,7 @@ public class bargraph {
       for(int j=0;j<len;j++)   //store the array in horizontal order
       { 
         for(int i=0;i<max-arr[j];i++)   
-         dis1[j][i]=' ';
+        dis1[j][i]=' ';
       
         for(int k=max-arr[j];k<max;k++)
         {  dis1[j][k]='*';

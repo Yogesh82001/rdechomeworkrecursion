@@ -1,4 +1,4 @@
-import java.util.ArrayList;// serach the given element index 
+import java.util.ArrayList;// serach the given element index  
 
 public class Search {
     static ArrayList<Integer> search

@@ -1,20 +1,12 @@
 package homeworkrdec;
 import java.io.*;
 public class secondMaxElement {
-    // JAVA Code for Find Second largest
-// element in an array
-
-
-
-
-	/* Function to print the second largest
-	elements */
 	public static void print2largest(int arr[],
 									int arr_size)
 	{
 		int i, first, second;
 
-		/* There should be atleast two elements */
+		
 		if (arr_size < 2) {
 			System.out.print(" Invalid Input ");
 			return;
@@ -22,15 +14,13 @@ public class secondMaxElement {
 
 		first = second = Integer.MIN_VALUE;
 		for (i = 0; i < arr_size; i++) {
-			/* If current element is greater than
-			first then update both first and second */
+			
 			if (arr[i] > first) {
 				second = first;
 				first = arr[i];
 			}
 
-			/* If arr[i] is in between first and
-			second then update second */
+			
 			else if (arr[i] > second && arr[i] != first)
 				second = arr[i];
 		}
@@ -43,7 +33,7 @@ public class secondMaxElement {
 							+ " is " + second);
 	}
 
-	/* Driver program to test above function */
+	
 	public static void main(String[] args)
 	{
 		int arr[] = { 1,2,3,4 };
@@ -51,7 +41,7 @@ public class secondMaxElement {
 		print2largest(arr, n);
 	}
 }
-// This code is contributed by Arnav Kr. Mandal.
+
 
     
 

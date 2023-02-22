@@ -1,0 +1,2535 @@
+ data type's
+primitive  static memory allocation
+non primitive dynamic memoryallocation
+skilrisers
+brainmentor
+////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+string buffer - 16 character by default
+  stringbuffer sb = new StringBuffer("hello");/ len 5 + capicity 21
+  total capicity =16+5=21
+  sb.append("how are youbi am fine thank u");
+  length =34
+  capacity =44
+  length > capacity 
+  new capacity = old capacity *2+2
+  if again capicity < length then capacitiy is equal to length
+
+  java - oops,ooad,solid,dry,god,exception handling,file io, networking , db,threads,gui
+  outcome: one project
+  dsa 
+  dbms
+  networking
+  os
+
+  data type's
+primitive  static memory allocation
+non primitive dynamic memoryallocation
+skilrisers
+brainmentor
+  dsa problem solution - iterative , recursive 
+  
+  list of problems:
+   num=97854-> even place (luckey number problem)
+                          (even position+even position )%9=0
+                          reverce of nuber 
+                          rotate a nummber num =12345,r=2,num=45123
+                          prime no  (1 to n )
+                          armstrong  (no 1 to n  )
+question solution 
+
+  
+  
+  
+  
+  
+  
+ /* //problem 1 ->Rotate a number
+ public static void rotateNumber() {
+        int num = 69785;
+        int count = Problem.countDigit(num); 
+        int rt = -7;
+        if(rt >= 0 ){
+            while (rt>count) {
+                rt -= count;
+            }
+            int divisor = (int) Math.pow(10, rt);
+            int newnumber = num%divisor;
+            num/=divisor;
+            int copy = num;
+            newnumber = newnumber*(int) Math.pow(10, Problem.countDigit(copy)) + num;
+            System.out.println(newnumber);
+        }
+        else{
+            rt = -rt;
+            while (rt>count) {
+                rt -= count;
+            }
+            int divisor = (int) Math.pow(10, count-rt);
+            int newnumber = num/divisor;
+            num%=divisor;
+            newnumber = num*(int) Math.pow(10, Problem.countDigit(newnumber)) + newnumber;
+            System.out.println(newnumber);
+        }
+        
+    }*/
+  
+  
+ /* //problem 2 -> lucky number
+  public static void luckyNumber() {
+        int number = 565152652646;
+        int copy = number;
+        int count = Problem.countDigit(number);
+        int sum = 0;
+        for(int i=count;i>0;i--){
+                if(i%2==0){
+                   sum +=copy%10;
+                   copy /=10; 
+                }
+                else{
+                copy /=10;     
+                }
+        }
+        if (sum%9==0) {
+            System.out.println("number is lucky");
+            
+        }
+        else{
+            System.out.println("not lucky");
+        }
+    }*/
+	
+	
+	
+/* //problem 3 -> Reverse a number
+	import java.util.Scanner;  
+public class ReverseNumberExample3  
+{  
+ 
+public static void reverseNumber(int number)   
+{  
+if (number < 10)   
+{  
+
+System.out.println(number);  
+return;  
+}  
+else   
+{  
+System.out.print(number % 10);  
+reverseNumber(number/10);  
+}  
+}  
+public static void main(String args[])  
+{  
+System.out.print("Enter the number that you want to reverse: ");  
+Scanner sc = new Scanner(System.in);  
+int num = sc.nextInt();  
+System.out.print("The reverse of the given number is: ");    
+reverseNumber(num);  
+}  
+}*/
+
+
+
+ /* //problem 4 -> prime number
+public class PrimeExample{    
+ public static void main(String args[]){    
+  int i,m=0,flag=0;      
+  int n=3;//it is number to be check   
+  m=n/2;      
+  if(n==0||n==1){  
+   System.out.println(n+" is not prime number");      
+  }else{  
+   for(i=2;i<=m;i++){      
+    if(n%i==0){      
+     System.out.println(n+" is not prime number");      
+     flag=1;      
+     break;      
+    }      
+   }      
+   if(flag==0)  { 
+   System.out.println(n+" is prime number"); }  
+  } 
+}    
+}*/
+
+
+
+
+/* //problem 5 -> Armstrong number
+import java.util.Scanner;  
+import java.lang.Math;  
+public class ArmstsrongNumberExample  
+{  
+  
+static boolean isArmstrong(int n)   
+{   
+int temp, digits=0, last=0, sum=0;   
+  
+temp=n;   
+ 
+while(temp>0)    
+{   
+temp = temp/10;   
+digits++;   
+}   
+temp = n;   
+while(temp>0)   
+{   
+      
+last = temp % 10;   
+
+sum +=  (Math.pow(last, digits));   
+   
+temp = temp/10;   
+}  
+  
+if(n==sum)   
+ 
+return true;      
+ 
+else return false;   
+}   
+ 
+public static void main(String args[])     
+{     
+int num;   
+Scanner sc= new Scanner(System.in);  
+System.out.print("Enter the limit: ");    
+num=sc.nextInt();  
+System.out.println("Armstrong Number up to "+ num + " are: ");  
+for(int i=0; i<=num; i++)  
+if(isArmstrong(i))   
+System.out.print(i+ ", ");  //prints the armstrong numbers 
+}   
+} */
+
+
+
+
+12/10/22 by Ravi sir 
+
+take input in java 
+system - .in     .out     . err
+buffer - chunks of data
+steam - flow of data 
+
+
+   
+
+   string buffer - 16 character by default
+  stringbuffer sb = new StringBuffer("hello");/ len 5 + capicity 21
+  total capicity =16+5=21
+  sb.append("how are youbi am fine thank u");
+  length =34
+  capacity =44
+  length > capacity 
+  new capacity = old capacity *2+2
+  if again capicity < length then capacitiy is equal to length
+
+  java - oops,ooad,solid,dry,god,exception handling,file io, networking , db,threads,gui
+  outcome: one project
+  dsa
+  dbms
+  networking
+  os
+
+  data type's
+primitive  static memory allocation
+non primitive dynamic memoryallocation
+skilrisers
+brainmentor
+  dsa problem solution - iterative , recursive 
+  
+  list of problems:
+   num=97854-> even place (luckey number problem)
+                          (even position+even position )%9=0
+                          reverce of nuber 
+                          rotate a nummber num =12345,r=2,num=45123
+                          prime no  (1 to n )
+                          armstrong  (no 1 to n  )
+question solution 
+
+  
+  
+  
+  
+  
+  
+ /* //problem 1 ->Rotate a number
+ public static void rotateNumber() {
+        int num = 69785;
+        int count = Problem.countDigit(num); 
+        int rt = -7;
+        if(rt >= 0 ){
+            while (rt>count) {
+                rt -= count;
+            }
+            int divisor = (int) Math.pow(10, rt);
+            int newnumber = num%divisor;
+            num/=divisor;
+            int copy = num;
+            newnumber = newnumber*(int) Math.pow(10, Problem.countDigit(copy)) + num;
+            System.out.println(newnumber);
+        }
+        else{
+            rt = -rt;
+            while (rt>count) {
+                rt -= count;
+            }
+            int divisor = (int) Math.pow(10, count-rt);
+            int newnumber = num/divisor;
+            num%=divisor;
+            newnumber = num*(int) Math.pow(10, Problem.countDigit(newnumber)) + newnumber;
+            System.out.println(newnumber);
+        }
+        
+    }*/
+  
+  
+ /* //problem 2 -> lucky number
+  public static void luckyNumber() {
+        int number = 565152652646;
+        int copy = number;
+        int count = Problem.countDigit(number);
+        int sum = 0;
+        for(int i=count;i>0;i--){
+                if(i%2==0){
+                   sum +=copy%10;
+                   copy /=10; 
+                }
+                else{
+                copy /=10;     
+                }
+        }
+        if (sum%9==0) {
+            System.out.println("number is lucky");
+            
+        }
+        else{
+            System.out.println("not lucky");
+        }
+    }*/
+	
+	
+	
+/* //problem 3 -> Reverse a number
+	import java.util.Scanner;  
+public class ReverseNumberExample3  
+{  
+ 
+public static void reverseNumber(int number)   
+{  
+if (number < 10)   
+{  
+
+System.out.println(number);  
+return;  
+}  
+else   
+{  
+System.out.print(number % 10);  
+reverseNumber(number/10);  
+}  
+}  
+public static void main(String args[])  
+{  
+System.out.print("Enter the number that you want to reverse: ");  
+Scanner sc = new Scanner(System.in);  
+int num = sc.nextInt();  
+System.out.print("The reverse of the given number is: ");    
+reverseNumber(num);  
+}  
+}*/
+
+
+
+ /* //problem 4 -> prime number
+public class PrimeExample{    
+ public static void main(String args[]){    
+  int i,m=0,flag=0;      
+  int n=3;//it is number to be check   
+  m=n/2;      
+  if(n==0||n==1){  
+   System.out.println(n+" is not prime number");      
+  }else{  
+   for(i=2;i<=m;i++){      
+    if(n%i==0){      
+     System.out.println(n+" is not prime number");      
+     flag=1;      
+     break;      
+    }      
+   }      
+   if(flag==0)  { 
+   System.out.println(n+" is prime number"); }  
+  } 
+}    
+}*/
+
+
+
+
+/* //problem 5 -> Armstrong number
+import java.util.Scanner;  
+import java.lang.Math;  
+public class ArmstsrongNumberExample  
+{  
+  
+static boolean isArmstrong(int n)   
+{   
+int temp, digits=0, last=0, sum=0;   
+  
+temp=n;   
+ 
+while(temp>0)    
+{   
+temp = temp/10;   
+digits++;   
+}   
+temp = n;   
+while(temp>0)   
+{   
+      
+last = temp % 10;   
+
+sum +=  (Math.pow(last, digits));   
+   
+temp = temp/10;   
+}  
+  
+if(n==sum)   
+ 
+return true;      
+ 
+else return false;   
+}   
+ 
+public static void main(String args[])     
+{     
+int num;   
+Scanner sc= new Scanner(System.in);  
+System.out.print("Enter the limit: ");    
+num=sc.nextInt();  
+System.out.println("Armstrong Number up to "+ num + " are: ");  
+for(int i=0; i<=num; i++)  
+if(isArmstrong(i))   
+System.out.print(i+ ", ");  //prints the armstrong numbers 
+}   
+} */
+
+
+
+
+12/10/22 by Ravi sir 
+
+take input in java 
+system - .in     .out     . err
+buffer - chunks of data
+steam - flow of data 
+
+
+  
+  
+  
+  
+  
+  //Rotate a number
+ public static void rotateNumber() {
+        int num = 12345;
+        int count = Problem.countDigit(num); 
+        int rt = -7;
+        if(rt >= 0 ){
+            while (rt>count) {
+                rt -= count;
+            }
+            int divisor = (int) Math.pow(10, rt);
+            int newnumber = num%divisor;
+            num/=divisor;
+            int copy = num;
+            newnumber = newnumber*(int) Math.pow(10, Problem.countDigit(copy)) + num;
+            System.out.println(newnumber);
+        }
+        else{
+            rt = -rt;
+            while (rt>count) {
+                rt -= count;
+            }
+            int divisor = (int) Math.pow(10, count-rt);
+            int newnumber = num/divisor;
+            num%=divisor;
+            newnumber = num*(int) Math.pow(10, Problem.countDigit(newnumber)) + newnumber;
+            System.out.println(newnumber);
+        }
+        
+    }
+  
+  
+  // lucky number
+  public static void luckyNumber() {
+        int number = 412345678;
+        int copy = number;
+        int count = Problem.countDigit(number);
+        int sum = 0;
+        for(int i=count;i>0;i--){
+                if(i%2==0){
+                   sum +=copy%10;
+                   copy /=10; 
+                }
+                else{
+                copy /=10;     
+                }
+        }
+        if (sum%9==0) {
+            System.out.println("number is lucky");
+            
+        }
+        else{
+            System.out.println("not lucky");
+        }
+    }
+	
+	
+	
+	// Reverse a number
+	import java.util.Scanner;  
+public class ReverseNumberExample3  
+{  
+ 
+public static void reverseNumber(int number)   
+{  
+if (number < 10)   
+{  
+
+System.out.println(number);  
+return;  
+}  
+else   
+{  
+System.out.print(number % 10);  
+reverseNumber(number/10);  
+}  
+}  
+public static void main(String args[])  
+{  
+System.out.print("Enter the number that you want to reverse: ");  
+Scanner sc = new Scanner(System.in);  
+int num = sc.nextInt();  
+System.out.print("The reverse of the given number is: ");    
+reverseNumber(num);  
+}  
+}
+
+
+
+// prime number
+public class PrimeExample{    
+ public static void main(String args[]){    
+  int i,m=0,flag=0;      
+  int n=3;//it is number to be check   
+  m=n/2;      
+  if(n==0||n==1){  
+   System.out.println(n+" is not prime number");      
+  }else{  
+   for(i=2;i<=m;i++){      
+    if(n%i==0){      
+     System.out.println(n+" is not prime number");      
+     flag=1;      
+     break;      
+    }      
+   }      
+   if(flag==0)  { 
+   System.out.println(n+" is prime number"); }  
+  } 
+}    
+}
+
+
+
+
+// Armstrong number
+import java.util.Scanner;  
+import java.lang.Math;  
+public class ArmstsrongNumberExample  
+{  
+  
+static boolean isArmstrong(int n)   
+{   
+int temp, digits=0, last=0, sum=0;   
+  
+temp=n;   
+ 
+while(temp>0)    
+{   
+temp = temp/10;   
+digits++;   
+}   
+temp = n;   
+while(temp>0)   
+{   
+      
+last = temp % 10;   
+
+sum +=  (Math.pow(last, digits));   
+   
+temp = temp/10;   
+}  
+  
+if(n==sum)   
+ 
+return true;      
+ 
+else return false;   
+}   
+ 
+public static void main(String args[])     
+{     
+int num;   
+Scanner sc= new Scanner(System.in);  
+System.out.print("Enter the limit: ");    
+num=sc.nextInt();  
+System.out.println("Armstrong Number up to "+ num + " are: ");  
+for(int i=0; i<=num; i++)  
+if(isArmstrong(i))   
+System.out.print(i+ ", ");  //prints the armstrong numbers 
+}   
+}
+
+partten -----------------------------------------
+ most basic partten 
+*****
+*****
+*****
+*****
+*****
+for(i=0;i<5;i++){
+    for(j=0;j<5;j++){
+        System.out.print("*");
+    }
+    System.out.println();
+}
+ 
+
+01234
+01234
+01234
+01234
+01234
+
+        
+
+
+
+
+
+data type's
+primitive  static memory allocation
+non primitive dynamic memoryallocation
+skilrisers
+brainmentor
+  
+  
+  
+  
+  
+  
+  //Rotate a number
+ public static void rotateNumber() {
+        int num = 12345;
+        int count = Problem.countDigit(num); 
+        int rt = -7;
+        if(rt >= 0 ){
+            while (rt>count) {
+                rt -= count;
+            }
+            int divisor = (int) Math.pow(10, rt);
+            int newnumber = num%divisor;
+            num/=divisor;
+            int copy = num;
+            newnumber = newnumber*(int) Math.pow(10, Problem.countDigit(copy)) + num;
+            System.out.println(newnumber);
+        }
+        else{
+            rt = -rt;
+            while (rt>count) {
+                rt -= count;
+            }
+            int divisor = (int) Math.pow(10, count-rt);
+            int newnumber = num/divisor;
+            num%=divisor;
+            newnumber = num*(int) Math.pow(10, Problem.countDigit(newnumber)) + newnumber;
+            System.out.println(newnumber);
+        }
+        
+    }
+  
+  
+  // lucky number
+  public static void luckyNumber() {
+        int number = 412345678;
+        int copy = number;
+        int count = Problem.countDigit(number);
+        int sum = 0;
+        for(int i=count;i>0;i--){
+                if(i%2==0){
+                   sum +=copy%10;
+                   copy /=10; 
+                }
+                else{
+                copy /=10;     
+                }
+        }
+        if (sum%9==0) {
+            System.out.println("number is lucky");
+            
+        }
+        else{
+            System.out.println("not lucky");
+        }
+    }
+	
+	
+	
+	// Reverse a number
+	import java.util.Scanner;  
+public class ReverseNumberExample3  
+{  
+ 
+public static void reverseNumber(int number)   
+{  
+if (number < 10)   
+{  
+
+System.out.println(number);  
+return;  
+}  
+else   
+{  
+System.out.print(number % 10);  
+reverseNumber(number/10);  
+}  
+}  
+public static void main(String args[])  
+{  
+System.out.print("Enter the number that you want to reverse: ");  
+Scanner sc = new Scanner(System.in);  
+int num = sc.nextInt();  
+System.out.print("The reverse of the given number is: ");    
+reverseNumber(num);  
+}  
+}
+
+
+
+// prime number
+public class PrimeExample{    
+ public static void main(String args[]){    
+  int i,m=0,flag=0;      
+  int n=3;//it is number to be check   
+  m=n/2;      
+  if(n==0||n==1){  
+   System.out.println(n+" is not prime number");      
+  }else{  
+   for(i=2;i<=m;i++){      
+    if(n%i==0){      
+     System.out.println(n+" is not prime number");      
+     flag=1;      
+     break;      
+    }      
+   }      
+   if(flag==0)  { 
+   System.out.println(n+" is prime number"); }  
+  } 
+}    
+}
+
+
+
+
+// Armstrong number
+import java.util.Scanner;  
+import java.lang.Math;  
+public class ArmstsrongNumberExample  
+{  
+  
+static boolean isArmstrong(int n)   
+{   
+int temp, digits=0, last=0, sum=0;   
+  
+temp=n;   
+ 
+while(temp>0)    
+{   
+temp = temp/10;   
+digits++;   
+}   
+temp = n;   
+while(temp>0)   
+{   
+      
+last = temp % 10;   
+
+sum +=  (Math.pow(last, digits));   
+   
+temp = temp/10;   
+}  
+  
+if(n==sum)   
+ 
+return true;      
+ 
+else return false;   
+}   
+ 
+public static void main(String args[])     
+{     
+int num;   
+Scanner sc= new Scanner(System.in);  
+System.out.print("Enter the limit: ");    
+num=sc.nextInt();  
+System.out.println("Armstrong Number up to "+ num + " are: ");  
+for(int i=0; i<=num; i++)  
+if(isArmstrong(i))   
+System.out.print(i+ ", ");  //prints the armstrong numbers 
+}   
+}
+
+
+
+
+
+*******************2/11/2022**************************
+DSA--->>
+
+leetcode-->> coding website
+
+
+
+recursion -->>
+- call stack 
+- local variables memory initialization
+- return statement working
+____________________________________
+call stack is mention fuction call 
+____________________________________
+recursion - process calling itself
+- breaking of large problem into same type of smaller problem and stop the termintion with the help of base case and terminating case
+typr of recurion->
+tail
+head
+liner
+recursion cotain ->
+base case 
+small problem
+processing logic 
+ 
+ power of a number-->>
+ 
+ package homeworkrdec;
+
+import java.util.Scanner;
+
+public class rcursionq {
+    // POWER OF ANY NUMBER ------->>>>>>>>>
+    static int power(int base,int pow){
+        if(pow==0){// base case
+            return 1;
+
+        }
+        return(base*power(base,pow-1));//small problem 
+
+    }
+    public static void main(String[]args){
+        System.out.println("Enter the value of number and power :");
+        Scanner sc=new Scanner(System.in);
+        int base=sc.nextInt();
+        int pow=sc.nextInt();
+        System.out.println("Required power is :"+power(base,pow));//call
+        
+
+    }
+    }
+ count zero in a digits----->>>>
+
+ package homeworkrdec;
+
+import java.util.Scanner;
+
+public class countzero {
+    static int countZerosRec(int input){
+		if(input==0) //Just to handle the case when input=0 
+		{
+			return 1;
+		}
+		if(input<10)//this is the actual base case
+		{
+			return 0;			
+		}
+		else if(input%10==0)
+		{
+			return 1+countZerosRec(input/10);//small problem
+		}
+		return countZerosRec(input/10);// small problem
+
+	}
+    
+
+        public static void main(String[] args) {
+            System.out.println("Enter the Digit :");
+            Scanner sc= new Scanner(System.in);
+            int input=sc.nextInt();
+            System.out.println(countZerosRec(input));//call
+
+    
+        }
+    
+}
+
+
+ sum of a digit ----->>
+
+ package homeworkrdec;
+
+import java.util.Scanner;
+
+public class sumofdigit {
+    static int sum_of_digit(int n)
+    {
+        if (n == 0){
+            return 0;
+        }
+        return (n % 10 + sum_of_digit(n / 10));
+    }
+
+    public static void main(String args[])
+    {
+        System.out.println("enter the digit :");
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        int result = sum_of_digit(num);
+        System.out.println("Sum of digits in " +num + " is " + result);
+    }
+    
+}
+
+reverse a string ---->>>
+
+sting str = hello world
+o/p  dlrow olleh 
+code->> package rdecjava;
+code-->>
+public class dsa {
+static String reverse(String str){
+    // base case
+    if(str.length()==1){
+        return str;
+    }
+    return reverse(str.substring(1))+str.charAt(0);
+
+
+
+   }
+   public static void main(String[]args){
+    String str="Hello world";
+    String revStr = reverse(str);
+    System.out.println(revStr);
+
+   }
+   single recursion
+   multiple recursion
+   fibonnaci serice->>0,1,1,2,3,5,8,13............
+
+   code->
+   static int fib(int n){
+    if(n<=1){
+        return n;
+
+
+
+    }
+    int first=fib(n-1);
+    int second=fib(n-2);
+    int res=first+second;
+    return res;
+
+   }
+   public static void main(String[]args){
+    int n=fib(5);
+    System.out.println(n);}
+home work
+//check array is sorted or not---->>>
+
+'package homeworkrdec;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class checkarraysorted {
+    private static boolean isSortedArray(int[] array, int n){
+        if(n == 1 || n == 0) return true;
+        return array[n-2] <= array[n-1] && isSortedArray(array, n-1);
+    }
+
+    
+    public static void main(String[] args) {
+        System.out.println("Enter the required size of the array :: ");
+      Scanner s = new Scanner(System.in);
+      int size = s.nextInt();
+      int arr[] = new int [size];
+      System.out.println("Enter the elements of the array one by one ");
+      for(int i=0; i<size; i++) {
+         arr[i] = s.nextInt();
+      }
+      System.out.println("Contents of the array are: "+Arrays.toString(arr));
+        
+        System.out.println("The array " + Arrays.toString(arr) + " " + (isSortedArray(arr, arr.length)?"is":"is not") + " sorted.");
+        System.out.println("--------");
+        System.out.println("The array " + Arrays.toString(arr) + " " + (isSortedArray(arr, arr.length)?"is":"is not") + " sorted.");
+
+    }
+    
+}
+  partten by recurion--->>>
+   
+   1.
+          *
+          **
+          ***
+          ****
+          *****
+
+          code---->>
+
+          package homeworkrdec;
+
+import java.util.Scanner;
+
+public class partten1usingrecursion {
+    
+
+
+     
+// function to print a row
+static void printn(int num)
+{
+    // base case
+    if (num == 0)
+        return;
+    System.out.print ("* ");
+ 
+    //  calling 
+    printn(num - 1);
+}
+ 
+// function to print the pattern
+static void pattern(int n, int i)
+{
+    // base case
+    if (n == 0)
+        return;
+    printn(i);
+    System.out.println();
+ 
+    // recursively calling pattern()
+    pattern(n - 1, i + 1);
+}
+ 
+
+public static void main (String[] args)
+{
+ System.out.println("enter the values of row for creating partten : ");
+ Scanner sc=new Scanner(System.in);
+ int n = sc.nextInt();
+    pattern(n, 1);
+}
+    
+}
+
+
+    2.  
+            *****
+            ****
+            ***
+            **
+            *
+
+            code---->>
+
+            package homeworkrdec;
+
+import java.util.Scanner;
+
+public class partten2byusingrecursion {
+    // function to print a row
+static void printn(int num)
+{
+    // base case
+    if (num == 0)
+        return;
+    System.out.print ("* ");
+ 
+    //  calling 
+    printn(num - 1);
+}
+ 
+// function to print the pattern
+static void pattern(int n, int i)
+{
+    // base case
+    if (n == 0)
+        return;
+    printn(i);
+    System.out.println();
+ 
+    // recursively calling pattern()
+    pattern(n - 1, i - 1);
+}
+ 
+
+public static void main (String[] args)
+{
+ System.out.println("enter the values of row for creating partten : ");
+ Scanner sc=new Scanner(System.in);
+ int n = sc.nextInt();
+    pattern(n, n);
+}
+    
+}
+
+    
+
+
+
+
+
+     3.  
+            1
+            2 3
+            4 5 6
+            7 8 9 10       
+          code----->>
+
+          package homeworkrdec;
+
+import java.util.Scanner;
+
+public class partten3usingrecursion {
+    
+// function to print a row
+static int print_row(int ct, int num)
+{
+	// base case
+	if (num == 0)
+		return ct;
+			System.out.print(ct + " ");
+
+	// recursively calling print_row()
+	return print_row(ct + 1, num - 1);
+}
+
+// function to print the pattern
+static void pattern(int n,
+					int count, int num)
+{
+	// base case
+	if (n == 0)
+		return;
+	count = print_row(count, num);
+			System.out.println();
+
+	// recursively calling pattern()
+	pattern(n - 1, count, num + 1);
+}
+
+
+public static void main (String[] args)
+{
+	System.out.println("enter the values of row for creating partten : ");
+ Scanner sc=new Scanner(System.in);
+ int n = sc.nextInt();
+	pattern(n, 1, 1);
+}
+}
+  
+
+
+  4.
+        * 
+      * * 
+    * * * 
+  * * * * 
+* * * * *
+  
+
+  package homeworkrdec;
+
+import java.util.Scanner;
+
+public class partten4usingrecursion {
+    
+    
+
+
+	static void print_space(int space)
+	{
+		// base case
+		if (space == 0)
+		{
+			return;
+		}
+		System.out.print(" " + " ");
+
+		// recursively calling print_space()
+		print_space(space - 1);
+	}
+
+	// function to print asterisks
+	static void print_asterisk(int asterisk)
+	{
+		// base case
+		if (asterisk == 0)
+		{
+			return;
+		}
+		System.out.print("* ");
+
+		// recursively calling print_asterisk()
+		print_asterisk(asterisk - 1);
+	}
+
+	// function to print the pattern
+	static void pattern(int n, int num)
+	{
+		// base case
+		if (n == 0)
+		{
+			return;
+		}
+		print_space(n - 1);
+		print_asterisk(num - n + 1);
+		System.out.println();
+
+		// recursively calling pattern()
+		pattern(n - 1, num);
+	}
+
+	
+	public static void main(String[] args)
+	{
+		System.out.println("enter the values of row for creating partten : ");
+       Scanner sc=new Scanner(System.in);
+       int n = sc.nextInt();
+		pattern(n, n);
+	}
+}
+
+5.  * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+          
+          package homeworkrdec;
+
+import java.util.Scanner;
+
+public class partteb5usingrecursion {
+
+
+
+// function to print spaces
+static void print_space(int space)
+{
+	// base case
+	if (space == 0)
+		return;
+	System.out.print(" ");
+
+	// recursively calling print_space()
+	print_space(space - 1);
+}
+
+// function to print asterisks
+static void print_asterisk(int asterisk)
+{
+	// base case
+	if (asterisk == 0)
+		return;
+	System.out.print("* ");
+
+	// recursively calling asterisk()
+	print_asterisk(asterisk - 1);
+}
+
+// function to print the pattern
+static void pattern(int n, int num)
+{
+	// base case
+	if (n == 0)
+		return;
+	print_space(n - 1);
+	print_asterisk(num - n + 1);
+	System.out.println("");
+
+	// recursively calling pattern()
+	pattern(n - 1, num);
+}
+
+
+public static void main(String[] args)
+{
+	  System.out.println("enter the values of row for creating partten : ");
+       Scanner sc=new Scanner(System.in);
+       int n = sc.nextInt();
+		pattern(n, n);
+}
+}
+ 
+
+ 6. 
+1         
+2 2       
+3 3 3     
+4 4 4 4   
+5 5 5 5 5
+
+
+
+code---->>
+
+
+package homeworkrdec;
+
+import java.util.Scanner;
+
+public class partten6usingrecursion {
+/*
+1 
+2 2 
+3 3 3 
+4 4 4 4 
+5 5 5 5 5
+                    */
+
+static void print_row(int no, int val)
+{
+	// base case
+	if (no == 0)
+		return;
+	System.out.print(val + " ");
+
+	// recursively calling print_row()
+	print_row(no - 1, val);
+}
+
+// function to print the pattern
+static void pattern(int n, int num)
+{
+	// base case
+	if (n == 0)
+		return;
+	print_row(num - n + 1, num - n + 1);
+	System.out.println();
+
+	// recursively calling pattern()
+	pattern(n - 1, num);
+}
+
+
+public static void main(String[] args)
+{
+	System.out.println("enter the values of row for creating partten : ");
+       Scanner sc=new Scanner(System.in);
+       int n = sc.nextInt();
+		pattern(n, n);
+}
+}
+ 
+
+
+ 7.
+
+
+A 
+B B 
+C C C 
+D D D D 
+E E E E E
+
+  code----->>
+
+
+   package homeworkrdec;
+
+import java.util.Scanner;
+
+public class partten7usingrecursion {
+    /*
+A 
+B B 
+C C C 
+D D D D 
+E E E E E
+           */
+
+static void print_row(int no, int val)
+{
+	// base case
+	if (no == 0)
+		return;
+	System.out.print((char)(val + 64) + " ");
+
+	// recursively calling print_row()
+	print_row(no - 1, val);
+}
+
+// function to print the pattern
+static void pattern(int n, int num)
+{
+	// base case
+	if (n == 0)
+		return;
+	print_row(num - n + 1, num - n + 1);
+	System.out.println();
+
+	// recursively calling pattern()
+	pattern(n - 1, num);
+}
+
+
+public static void main(String[] args)
+{
+	System.out.println("enter the values of row for creating partten : ");
+       Scanner sc=new Scanner(System.in);
+       int n = sc.nextInt();
+		pattern(n, n);
+}
+}
+
+
+8.  
+   
+A 
+B C 
+D E F 
+G H I J 
+K L M N O
+     
+
+     code---->>
+
+     package homeworkrdec;
+
+import java.util.Scanner;
+
+public class partten8byusingrecursion {
+       /*
+A 
+B C 
+D E F 
+G H I J 
+K L M N O  */
+    
+
+// function to print a row
+static int print_row(int ct, int num)
+{
+	// base case
+	if (num == 0)
+		return ct;
+	System.out.print((char)(ct + 64) + " ");
+
+	// recursively calling print_row()
+	print_row(ct + 1, num - 1);
+	return num + ct;
+	
+}
+
+// function to print the pattern
+static void pattern(int n, int count, int num)
+{
+	// base case
+	if (n == 0)
+		return;
+	count = print_row(count, num);
+	System.out.println();
+
+	// recursively calling pattern()
+	pattern(n - 1, count, num + 1);
+}
+
+
+public static void main(String[] args)
+{
+	System.out.println("enter the values of row for creating partten : ");
+       Scanner sc=new Scanner(System.in);
+       int n = sc.nextInt();
+	pattern(n, 1, 1);
+}
+}
+
+
+09/11/2022
+
+white board round for interview ---->>>
+========================================
+
+recursion
+back tracking 
+str = ram kumar 
+r-2
+ -1
+ a-2
+ m-2
+ k-1
+ u-1
+ 
+
+ hashing - simple chiz ko ak jgha rkhna 
+ constant time 
+ key and value pair 
+
+
+
+ timmer questions---->>
+ ================
+ all loop question using resursion 
+ replace pie value with 3.14
+ i/p- 3+pi*1-5*pi+6
+
+
+ power of 3 ,4,n;
+
+
+ 18/11/22---->>
+ ============
+ 
+ array serach and get all the search occurrence
+ array is sorted or not
+ array search and replace all the occurrence
+ array all the elements sum return/print
+ array all elements cube (each element)return/print
+
+ any 30 question 
+ armstrong---->>
+ void 
+ boolean/int/etc
+
+string reverse
+string palindrome
+string titlecase
+string search 
+string replace
+medium
+
+
+
+brach recursion ----->>.
+================
+
+
+
+
+boot 
+adems apple's
+
+
+23/11/2022---->>
+============
+
+Bord dice problem---->
+ leet code question no 70 and 509 
+ project live 
+
+ ######previous class notes----->>>
+
+Industry Expectation :-
+--Topics :- OOPS + OOAD +SOLID + DRY + GOD + Exception handling + File IO + Networking + DB + Threads + GUI
+--Outcome : One project
+--DSA (400 + Self solved problem)
+--DBMS
+--Networking
+--OS
+
+Java programming 
+-OOPS
+-Platform independent -WORA
+ WORA-Write once Run Anywhere
+-Open Source 
+-development/testing/security/Networking 
+-JDK - Java development KIt 
+-JRE - Java Runtime Enviorment
+-Wrapper (Class)
+-Every program of java starts with a Class
+- class name cannot be staeted with a number or any other special char except _ or $
+- class name must be same as file name
+
+JDK - JAVA development kit 
+- it provides javadoc
+- it provides java compiler
+- it also provides jar/war/ear/rar
+JRE - Java Runtime Enviorment
+- JRE is divided into 2 parts
+-- JVM - Java virtual machine (Interpreter Executes line by line code of byte code)
+    actually JVM is responsible to convert byte code to machine code
+-- Libraries
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Industry Expectation :-
+--Topics :- OOPS + OOAD +SOLID + DRY + GOD + Exception handling + File IO + Networking + DB + Threads + GUI
+--Outcome : One project
+--DSA (400 + Self solved problem)
+--DBMS
+--Networking
+--OS
+
+Java programming 
+-OOPS
+-Platform independent -WORA
+ WORA-Write once Run Anywhere
+-Open Source 
+-development/testing/security/Networking 
+-JDK - Java development KIt 
+-JRE - Java Runtime Enviorment
+-Wrapper (Class)
+-Every program of java starts with a Class
+- class name cannot be staeted with a number or any other special char except _ or $
+- class name must be same as file name
+
+JDK - JAVA development kit 
+- it provides javadoc
+- it provides java compiler
+- it also provides jar/war/ear/rar
+JRE - Java Runtime Enviorment
+- JRE is divided into 2 parts
+-- JVM - Java virtual machine (Interpreter Executes line by line code of byte code)
+    actually JVM is responsible to convert byte code to machine code
+-- Libraries
+
+
+
+######### Training Class - 2 #########
+
+## Hello World Progrsam 
+-Keywords
+-- Class 
+-- Public
+-- Static
+-- Void
+-- main
+-- String
+
+
+
+# System class
+--.in (Obj of InputStream Defined under System Class) 
+--.out(Obj of PrintStream Defined under System Class) 
+--.err(Obj of PrintStream Defined under System Class)
+ 
+# Type Casting
+-- Integer.parseInt() [Used for converting String to Integer number]
+-- Float.parsefloat() [Used for converting String to Float number]
+-- Double.parsedouble() [Used for converting String to double number]
+
+
+
+############################ Class3 / Class4 ###############################################
+Date:- 28/09/2022
+Edited :- 30/09/2022
+# Data Type
+--Primitive  (int Byte long short float double char  bool)
+-----Primitive means primary
+-----Value type (Because it store value only)
+-----Simple type (Only contain same typr of data)
+-----Inspired from C , C++
+-----Immutable(Does not change in the original value if we channge in Copied)
+-----Static Memory Allocation
+--Non Primitive (Array String Class&Obj Integer Long Float Double Byte Short)
+-----Reference type( Keep Address/Reference)(Address could be of 4 byte (32bit) or 8 byte(64 bit))
+-----Complex type (Contain many type of data like a bag)
+-----Dynamic Memory Allocation
+--Keywords
+-----Keywords are reserve words,Compiler knows these so it know how much memory is to allocate for primitive, this is get decided on compile time.
+-----Start with small letter 
+
+--Heap (Storage space Made by java to store all object)
+-----Stronng pool(Inside Heap there is a special area where java store string called Stronng pool)
+
+--String 
+-----(String is a collection of caharacter )
+-----String is a predefined Java Class
+-----String also behave like data type
+-----String obj can be created in 2 ways
+-----a)Literal way(1 or 0 way)
+-----b)new object way (2 or 1 obj)
+-----String store in String pool
+-----String is a final class in Java (No one can inherit)
+-----String obj are Immutable
+-----intern()
+        when you weite String a = "Amit" -> Internally it is converted into
+        String a = "Amit".intern()
+        intern is a method in a string, this method is used to check the string exist in a pool or not. It gives the reference of a string in a pool
+
+
+Q. How to build a muttable string and how it did that? (H/W)
+Sol :- We can Use Class StringBuilder or StringBuffer to create mutable String.
+        StringBuilder Creates a seq of char (Known as Array of char)
+        3 Constructor are available 
+
+
+Q.What is the diff between string builder and string buffer? (H/W)
+Sol:- --String Builder is Faster then StringBuffer
+      --StringBilder is not synchronized where StringBuffer is Synchronized 
+
+--H/W:
+    input : aMIt sRiVaStaVA
+    Output: Amit Srivastava 
+    Hint : Use String Method
+    There is only two methods are available about String Case 1 is toLower 2 is toUpper So we can not perform the question only through method
+
+    Q2:
+        input: ram@yahoo.com
+        Output: true,False
+        Ask:- If @ comes more than one time or the domain is something else  other than .com will the email valid
+
+###### Class 5 (7/10/2022)###############
+String Buffer 
+--Default Cacpacity 16 
+--(Intial length of string + 16 is the initial capacity if string is initialized)
+--When capacity < length
+--New Capacity = OLD capacity * 2 + 2 (First 2 is because of char is of 2 byte and second 2 is because of null char )
+--if again capacity < length then Newest capacity = length
+--All metehods of StringBuffer is Synchronized (In every case Synchronization is not good)
+
+
+Problem Statement 
+--Iterative Problem
+--Recursive problem
+
+
+-##### HW
+---Problem :- Lucky Number Problem
+------Statement :- Sum of all even places digit modulus division by 9 gives 0 then the number is Lucky
+---Problem :- Reverse Number
+---Problem :- Rotate a Number
+------Statement :- +ve left to right , -ve right to left
+---Problem :- Prime Number ( 4 logic are available do all , Hint:- Think about square root) 
+---Problem :- ArmStrong Number (Sum of power of number of digit of every digit is equal to the original number )
+
+
+
+######### Class 6 (12/10/2022) #############
+-- InputStream (Class for taking input)
+----- Input can come from Keyboard , Network , File
+--Scanner
+-----(predefined Class for taking input) 
+-----Scanner is a Buffer
+-----Methods of Scanner (nextint(),nextLine(),nextbyte(),etc)
+-----nextLine take input until it didn't get '\n' 
+
+--Buffer
+-----(chunk () of Data)
+-----() 
+--Stream 
+-----(Flow of Data)
+-----(Example Live Streaming)
+****{EXAMPLE Filling water in cooler There are two ways to fill first is use pipe and second is Use Balti.
+ the pipe is an example of stream and balti is the example of buffer;}********
+  IF ELSE 
+  -----
+
+############# Class 7 (14/10/2022) #########################
+--Patterns
+----- Pattern 1{
+        *****
+}
+----- Pattern 2{
+        *****
+        *****
+        *****
+        *****
+        *****
+}
+----- Pattern 3 {
+        00000
+        11111
+        22222
+        33333
+        44444
+}
+----- Pattern 4 {
+        01234
+        01234
+        01234
+        01234
+        01234
+}
+----- Pattern 5 {
+        *
+        **
+        ***
+        ****
+        *****
+}
+----- Pattern 6 {
+        1
+        12
+        123
+        1234
+        12345
+}
+----- Pattern 7 {
+        *****
+        ****
+        ***
+        **
+        *
+}
+----- Pattern 8 {
+        54321
+        5432
+        543
+        54
+        5
+}
+----- Pattern 9 {
+        1
+        23
+        456
+        78910
+}
+----- Pattern 10{
+            *
+           **
+          ***
+         ****
+        *****
+}
+----- Pattern 11{
+             *
+            * *
+           * * *
+          * * * *
+         * * * * *
+}
+----- Pttern 12{
+              *
+             ***
+            *****
+           *******
+          *********
+}
+----- Pattern 13 {
+         *********
+          *******
+           *****
+            ***
+             *
+}
+----- Pattern 14{
+        *****
+        *   *
+        *   *
+        *   *
+        *****
+}
+----- Pattern 15{
+        *****
+        *   *
+        * * *
+        *   *
+        *****
+}
+
+
+
+######### Training Class - 2 #########
+
+## Hello World Progrsam 
+-Keywords
+-- Class 
+-- Public
+-- Static
+-- Void
+-- main
+-- String
+
+
+
+# System class
+--.in (Obj of InputStream Defined under System Class) 
+--.out(Obj of PrintStream Defined under System Class) 
+--.err(Obj of PrintStream Defined under System Class)
+ 
+# Type Casting
+-- Integer.parseInt() [Used for converting String to Integer number]
+-- Float.parsefloat() [Used for converting String to Float number]
+-- Double.parsedouble() [Used for converting String to double number]
+
+
+
+############################ Class3 / Class4 ###############################################
+Date:- 28/09/2022
+Edited :- 30/09/2022
+# Data Type
+--Primitive  (int Byte long short float double char  bool)
+-----Primitive means primary
+-----Value type (Because it store value only)
+-----Simple type (Only contain same typr of data)
+-----Inspired from C , C++
+-----Immutable(Does not change in the original value if we channge in Copied)
+-----Static Memory Allocation
+--Non Primitive (Array String Class&Obj Integer Long Float Double Byte Short)
+-----Reference type( Keep Address/Reference)(Address could be of 4 byte (32bit) or 8 byte(64 bit))
+-----Complex type (Contain many type of data like a bag)
+-----Dynamic Memory Allocation
+--Keywords
+-----Keywords are reserve words,Compiler knows these so it know how much memory is to allocate for primitive, this is get decided on compile time.
+-----Start with small letter 
+
+--Heap (Storage space Made by java to store all object)
+-----Stronng pool(Inside Heap there is a special area where java store string called Stronng pool)
+
+--String 
+-----(String is a collection of caharacter )
+-----String is a predefined Java Class
+-----String also behave like data type
+-----String obj can be created in 2 ways
+-----a)Literal way(1 or 0 way)
+-----b)new object way (2 or 1 obj)
+-----String store in String pool
+-----String is a final class in Java (No one can inherit)
+-----String obj are Immutable
+-----intern()
+        when you weite String a = "Amit" -> Internally it is converted into
+        String a = "Amit".intern()
+        intern is a method in a string, this method is used to check the string exist in a pool or not. It gives the reference of a string in a pool
+
+
+Q. How to build a muttable string and how it did that? (H/W)
+Sol :- We can Use Class StringBuilder or StringBuffer to create mutable String.
+        StringBuilder Creates a seq of char (Known as Array of char)
+        3 Constructor are available 
+
+
+Q.What is the diff between string builder and string buffer? (H/W)
+Sol:- --String Builder is Faster then StringBuffer
+      --StringBilder is not synchronized where StringBuffer is Synchronized 
+
+--H/W:
+    input : aMIt sRiVaStaVA
+    Output: Amit Srivastava 
+    Hint : Use String Method
+    There is only two methods are available about String Case 1 is toLower 2 is toUpper So we can not perform the question only through method
+
+    Q2:
+        input: ram@yahoo.com
+        Output: true,False
+        Ask:- If @ comes more than one time or the domain is something else  other than .com will the email valid
+
+###### Class 5 (7/10/2022)###############
+String Buffer 
+--Default Cacpacity 16 
+--(Intial length of string + 16 is the initial capacity if string is initialized)
+--When capacity < length
+--New Capacity = OLD capacity * 2 + 2 (First 2 is because of char is of 2 byte and second 2 is because of null char )
+--if again capacity < length then Newest capacity = length
+--All metehods of StringBuffer is Synchronized (In every case Synchronization is not good)
+
+
+Problem Statement 
+--Iterative Problem
+--Recursive problem
+
+
+-##### HW
+---Problem :- Lucky Number Problem
+------Statement :- Sum of all even places digit modulus division by 9 gives 0 then the number is Lucky
+---Problem :- Reverse Number
+---Problem :- Rotate a Number
+------Statement :- +ve left to right , -ve right to left
+---Problem :- Prime Number ( 4 logic are available do all , Hint:- Think about square root) 
+---Problem :- ArmStrong Number (Sum of power of number of digit of every digit is equal to the original number )
+
+
+
+######### Class 6 (12/10/2022) #############
+-- InputStream (Class for taking input)
+----- Input can come from Keyboard , Network , File
+--Scanner
+-----(predefined Class for taking input) 
+-----Scanner is a Buffer
+-----Methods of Scanner (nextint(),nextLine(),nextbyte(),etc)
+-----nextLine take input until it didn't get '\n' 
+
+--Buffer
+-----(chunk () of Data)
+-----() 
+--Stream 
+-----(Flow of Data)
+-----(Example Live Streaming)
+****{EXAMPLE Filling water in cooler There are two ways to fill first is use pipe and second is Use Balti.
+ the pipe is an example of stream and balti is the example of buffer;}********
+  IF ELSE 
+  -----
+
+############# Class 7 (14/10/2022) #########################
+--Patterns
+----- Pattern 1{
+        *****
+}
+----- Pattern 2{
+        *****
+        *****
+        *****
+        *****
+        *****
+}
+----- Pattern 3 {
+        00000
+        11111
+        22222
+        33333
+        44444
+}
+----- Pattern 4 {
+        01234
+        01234
+        01234
+        01234
+        01234
+}
+----- Pattern 5 {
+        *
+        **
+        ***
+        ****
+        *****
+}
+----- Pattern 6 {
+        1
+        12
+        123
+        1234
+        12345
+}
+----- Pattern 7 {
+        *****
+        ****
+        ***
+        **
+        *
+}
+----- Pattern 8 {
+        54321
+        5432
+        543
+        54
+        5
+}
+----- Pattern 9 {
+        1
+        23
+        456
+        78910
+}
+----- Pattern 10{
+            *
+           **
+          ***
+         ****
+        *****
+}
+----- Pattern 11{
+             *
+            * *
+           * * *
+          * * * *
+         * * * * *
+}
+----- Pttern 12{
+              *
+             ***
+            *****
+           *******
+          *********
+}
+----- Pattern 13 {
+         *********
+          *******
+           *****
+            ***
+             *
+}
+----- Pattern 14{
+        *****
+        *   *
+        *   *
+        *   *
+        *****
+}
+----- Pattern 15{
+        *****
+        *   *
+        * * *
+        *   *
+        *****
+}
+
+################## Class 8 (19/10/2022) ########################
+--Prime Number
+---- 4 method learnt (1. check from 2 to n-1 , 2. Check from 2 to n/2 , 3. Check from 2 to sqrt of (n))
+------- 4. Prime Seive Method (First check with 2 & 3 then with in a loop of 5 to sqrt of n on the step of 6 and check with i and i+2 of loop)
+----Count Digit of a number
+----Count Digit of Zeroes of a number
+----Reverse of a number
+----Find GCD and LCM 
+
+--HW
+-----Armstrong Number
+-----Palindrome Number
+-----Questions on loop on the website codeforwin (https://codeforwin.org/2015/06/for-do-while-loop-programming-exercises.html)
+
+#################### Class 9 (02/11/2022) ##################
+--Recursion
+--- Process calling itself
+--- Breaking of large problem into smaller instances and solving it
+--- 3 pre-requisite {
+        - call stack
+        - Local memory initialization 
+        - Return Statement Working 
+        }
+--- Types of recursion {
+        - Head Recursion (recursive call then processing logic )
+        - tail recursion (processing logic then recursive call)
+        - linear recursion (processing logic then recursive call then logic)
+}
+--- Recursion program contains{
+        - Base case
+        - Small Problem
+        - Processing logic
+}
+--- Fall back
+
+##### HW ####
+-- Power of a number
+-- Count zero in a digit
+-- sum of a digit
+
+#################### Class 10 (04/11/2022) ##################
+--Reverse a String
+##### HW #####
+--Check Array is sorted or not
+--Pattern 1{
+        *
+        **
+        ***
+        ****
+        *****
+}
+--Pattern 2 {
+        
+        *****
+        ****
+        ***
+        **
+        *
+}
+--Pattern 3 {
+        1
+        2 3
+        4 5 6
+        7 8 9 10
+}
+#################### Class 11 (09/11/2022) ##################
+--Interview 
+----- Whiteboard Round {
+        Q.   *
+            * *
+           * * *
+        Q.Print Armstrong Number till given number using Recursion 
+        Q.Print Prime Number till given number using Recursion 
+}
+##### HW #####
+-- Pattern 1 {
+        a
+        ab
+        abc
+        abcd
+        abcde
+}
+-- Pattern 2 {
+        A 
+        BC 
+        DEF 
+        GHIJ
+        KLMNO
+}
+#################### Class 12 (11/11/2022) ##################
+--Find the frequency of Every charecter of String {
+        -- Make an array of 256 because of keyboard have 256 character so initially it has 0 in every index then we can increase while traversing (This approach is called Hashing )
+        -- Traverse the array keep the first character again traverse the Whole array and count that character (Time complexity is n2)
+}
+--Print all the index of given element in given array
+
+#################### Class 13 (16/11/2022) ##################
+(We did questions in time limit)
+--Problem 1:- Replace pi value with 3.14{
+        i/p:- "3+pi*1-5*pi+6"
+        o/p:- "3+3.14*1-5*3.14+6"
+}
+--Problem 2 :- Adjacent starts{
+        i/p :- abbaaba
+        o/p :- ab*ba*aba
+}
+--Problem 2 :- Check if a number is of power of 2 or not{
+        i/p :- 16
+        o/p :- True
+}
+##### HW #####
+--Q. Power of 3
+--Q. Power of 4
+--Q. Power of N
+
+#################### Class 14 (18/11/2022) ##################
+--ToDo For The week {
+        -- Do all the questions by recursion with and without return  
+        Q. Solve recursive functions of all the questions did in loop in two ways function with return and func with no return
+        Q. Array Search and get all the Search Occurrence
+        Q. Array is sorted or not
+        Q. Array search and replace all the Occurrence
+        Q. Array all the elements sum Return / Print
+        Q. Array all Elements Cube (Each Element) Return/Print
+        Q. String Reverse
+        Q. String Palindrome
+        Q. String Title Case
+        Q. String Search
+        Q. String Replace
+}
+--Branch Recursion{
+        -- Permutation Question will be solved by Branch recursion
+        Q. Sub Sequence of a String
+        ##### HW #####
+        Q. All permutation of given String
+}
+
+
+ #################### Class 15 (23/11/2022) ##################
+--Problem 1{
+        name:- Board Dice Problem
+        Statement:- A board is given of nxm , a dice is given. find all the possible combination of dice for reaching the destination ?
+}
+--Problem 2{
+        name:-PLayer In Maze 
+        Statement:- A board is given of nxm , from (0,0) to target(n,m), player can go right or down
+}
+##### HW #####
+--Problem 3{
+        name:- SubSeq 
+        Statement:- find All sub Sequence
+        Signature{
+                function:- static void subSeq(String str,String result)
+                call in main:- subSeq("amit","")
+        } 
+}
+--Problem 4{
+        name:- Permutation Of String 
+        Statement:- find All Permutation ofString
+        Signature{
+                function:- static void perm(String str,String result)
+                call in main:- perm("amit","")
+        }
+}
+--LeetCode problem {
+        Q. 70
+        Q. 509
+}
+
+
+####################class-16 ##################### 25\11\22
+leet code problem number 51 N quene ----> https://leetcode.com/problems/n-queens/
+backtracking look up the possibality / set and undo 
+evernotes 
+hackerearth story
+  partten of backtracking
+  1. Decision problem 
+  2.optimazation problem 
+  3. enunesation problem
+  homework complete leetcode problem number 51.
+  
+  
+  #################### Class 17 (30/11/2022) ##################
+--Sudoku Solver (submit on leetcode Q.37){
+        solution:- {
+                1. If col is not empty then go to next cell
+                2. If col is empty then try to put from 1 to 9 for this check that value should be unique in row,col and sub grid
+                
+        }
+}
+##### HW #####
+--Letter Combination of a phone Number (LeetCode Q.17)
+
+
+################### Class 18 (05/12/2022) ##################
+--Well Formed parentheses{
+        Company:- Microsoft, Apple, Nvidia, TCS
+        LeetCode :- Q.22
+        Statement:- Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+}
+--Word Search{
+        Statement:- A 2D char board is given filled with char . Given a word we have to find if the word is given. We can go from right,left,down,up.
+}
+  
+
+
+
+  ##############class 19(07/12 /2022)############
+  debuging for word search 
+  permutation using swap concept
+  combination sum(ebay,airbnb ,google,uber)
+  rat in a maze
+maze count count total number of way
+
+
+#################### Class 20 (09/12/2022) ##################
+-- JosephursProblem
+-- KnapsackProblem
+
+
+class 21(15/02/2023)
+____________________________________
+what is data structure ?
+way to repersent the data or manage the data 
+time and space
+calculation of time and space complexity 
+Asymptotic analysis
+1.ignore lower order terminating
+2.ignore leading term constant
+order in asymptotic notation - order of growth
+orderof growth->
+c<loglogn<logn<npow1/3<npow1/2<n<npow2<npow3<npow<2pown<npown
+2c+3n
+3n
+n
+Asymptotic notation 
+-best case-constant time-omega
+-avg case-liner(based on a condition)-theta
+-worst case-linear-big o
+
+Arrays
+------
+collection of similar data Type
+contiguous memory allocation
+random access
+cache friendly
+
+Array syntax
+int arr[]={1,2,3,4,5};
+int []arr={1,2,3,4,5};
+int []arr={1,2,3,4,5};
+int []arr={1,2,3,4,5};
+int []arr={1,2,3,4,5};
+
+
+
+CRUD->
+-------
+Creates,delete,update,read
+public class ArrayCRUD{
+    int arr[];
+    int currentSize;
+    public ArrayCRUD(int n){
+        this.arr=new int[n];
+        this.currentSize=0;
+    }
+    public void insert(int index,int item){
+        if(index>currentSize){
+            System.out.println("zIndex can not be greater then current size");
+        
+        }
+        for(int i=currentSize;i>index;i--){
+            arr[i]=arr[i-1];
+        }
+        arr[index]=item;
+        currentSize++;
+        System.out.println("element added");
+        return;
+
+
+    }
+    public void delete(int index){
+        if(currentSize==0){
+            System.out.println("Array is empty ");
+            return;
+        }
+        for(int i=index;i<currentSize-1;i++){
+            arr[i]=arr[i+1];
+            arr[currentSize-1]=0;
+            currentSize--;
+            System.out.println("Elemenet remove");
+        }
+
+
+    }
+    void Search(int item){
+        for(int i=0;i<=currentSize;i++){
+            if(arr[i]==item){
+                System.out.println("Array index is : "+i);
+
+            }
+        }
+
+    }
+    void update(int index,int item){
+        arr[index]=item;
+
+    }
+    void print(){
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+",");
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        ArrayCRUD obj=new ArrayCRUD(5);
+        obj.insert(0, 10);
+        obj.insert(1, 20);
+        obj.insert(2, 30);
+        obj.insert(3, 40);
+        obj.insert(1, 11);
+        obj.delete(2);
+        obj.Search(10);
+        obj.update(0, 60);
+        obj.print();
+    }
+}
+Question---
+1. find max element
+2. find second max Elemenet
+3. span of an array 
+i/p=arr={10,20,30,40,50}
+max-min=span
+50-10=40
+4. print bar chart 
+i/p=arr={2,0,1,3}
+     *
+*    *
+*  * * 
+2 0 1 3
+
+public class MaxElement {
+
+    // TC : O(n^2)
+    static void approach_1(int arr[], int n) {
+        boolean isMax;
+        for(int i = 0; i < n; i++) {
+            isMax = true;
+            for(int j = 0; j < n; j++) {
+                if(arr[j] > arr[i]) {
+                    isMax = false;
+                    break;
+                }
+            }
+            if(isMax) {
+                System.out.println("Max Element is : " + arr[i]);
+                return;
+            }
+        }
+    }
+
+    static void approach_2(int arr[], int n) {
+        int max = arr[0];
+        for(int i = 1; i < n; i++) {
+            if(arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        System.out.println("Max element is : " + max);
+    }
+
+    public static void main(String[] args) {
+        int arr[] = {1,5,2,6,7,12,8};
+        int n = arr.length;
+        approach_1(arr, n);
+    }
+}
+
+
+
+package homeworkrdec;
+
+public class secondMaxElement {
+    static void Secondmax(int arr[],int n){
+        int count=0;
+        int max=arr[0];
+        for(int i=1;i<n;i++){
+            if(arr[i]>max){
+                max=arr[i];
+                count++;
+            }
+            if(count==1)
+            break;
+        }
+        System.out.println("Second max element is "+max);
+    }
+    public static void main(String[] args) {
+        int arr[]={10,5,20,2,50};
+        int n=arr.length;
+        Secondmax(arr, n);
+    }
+    
+}
+
+
+
+package homeworkrdec;
+
+public class span {
+
+    static void spaninarray(int arr[], int n) {
+        int max = arr[0];
+        int min=arr[0];
+        for(int i = 1; i < n; i++) {
+            if(arr[i] > max) {
+                max = arr[i];
+            }
+            if(arr[i]<min){
+                min=arr[i];
+            }
+        }
+
+        int spanarray=max-min;
+        System.out.println(spanarray);
+    }
+    public static void main(String[] args) {
+        int arr[] = {1,5,2,6,7,12,8};
+        int n = arr.length;
+        spaninarray(arr, n);
+    }
+    
+}
+
+
+1.check array is sort or not
+2.reverse an array
+two pointer apporach
+3.remove duplicat from sorted array
+4.find the leader elements
+
+
+  
+
+
+
+
+
+
+
+    
+
+
+    
+
+

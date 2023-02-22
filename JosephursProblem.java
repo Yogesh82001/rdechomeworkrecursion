@@ -1,6 +1,6 @@
 public class JosephursProblem {
     public static void main(String[] args) {
-        System.out.println(Jos(5, 3));
+        System.out.println(Jos(8, 3));
     }
     // JosephursProblem
     public static int Jos(int n,int k) {

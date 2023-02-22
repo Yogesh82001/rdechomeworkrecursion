@@ -1,4 +1,4 @@
-package classinrdec; // 11/11/2022  hash map type question  print the frequency of any element in array 
+ // 11/11/2022  hash map type question  print the frequency of any element in array 
 
 import java.util.HashMap;
 import java.util.Scanner;
